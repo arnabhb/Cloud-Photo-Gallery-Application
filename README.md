@@ -1,19 +1,62 @@
 # AWS SQL and NoSQL Photo Gallery
 
-A Flask photo gallery implemented twice to compare relational and NoSQL data models on AWS
+> **Generative AI disclosure**
+>
+> The baseline application templates and early scaffolding for this project were created with generative AI assistance using **Cursor** and **ChatGPT**
+>
+> The generated starting points were reviewed reorganized documented and modified to improve security consistency maintainability and repository readiness
+
+## Why this project matters
+
+Modern applications often need to combine user authentication media storage search metadata management and reliable cloud infrastructure
+
+This project demonstrates how the same photo gallery product can be implemented with both relational and NoSQL databases while sharing the same Flask interface and AWS services
+
+The comparison is useful for real-world system design because it shows how database choice affects schema design queries deletion workflows scalability and application code
+
+Practical applications include
+
+- Media management platforms
+- Digital asset libraries
+- E-commerce product image systems
+- Social and community applications
+- Internal document and evidence repositories
+- Cloud migration and database modernization projects
+
+## Tech stack
+
+| Layer | Technologies |
+|---|---|
+| Backend | Python Flask Jinja2 |
+| Relational database | Amazon RDS for MySQL PyMySQL |
+| NoSQL database | Amazon DynamoDB Boto3 |
+| Object storage | Amazon S3 |
+| Email verification | Amazon SES |
+| Infrastructure as code | AWS CloudFormation |
+| Authentication | Flask sessions Werkzeug password hashing timed verification tokens |
+| Frontend | HTML Bootstrap CSS |
+| Image metadata | EXIFRead |
+| Deployment target | Amazon EC2 with an IAM instance role |
+
+## Core functionality
+
+- Account registration password hashing login logout and email verification
+- Album creation deletion browsing and search
+- Photo upload deletion browsing and search
+- Photo tags descriptions timestamps and EXIF metadata
+- S3 storage for photos and album thumbnails
+- Automatic S3 cleanup when photos albums or accounts are deleted
+- Parallel SQL and DynamoDB implementations using the same user-facing workflow
+- CloudFormation provisioning for the supporting AWS infrastructure
+
+## Architecture overview
+
+The repository contains two implementations of the same application
 
 - `sql/` stores users albums and photos in Amazon RDS for MySQL
 - `nosql/` stores users in one DynamoDB table and album or photo records in another
-- Both applications store image objects in Amazon S3 and can send account confirmation links through Amazon SES
+- Both applications store image objects in Amazon S3 and send account confirmation links through Amazon SES
 - `template.yaml` provisions the shared AWS infrastructure with CloudFormation
-
-## Features
-
-- Account registration password hashing login logout and email verification
-- Album creation deletion and search
-- Photo upload deletion search tags and EXIF metadata display
-- S3 object cleanup when photos albums or accounts are deleted
-- Separate SQL and DynamoDB implementations with the same user interface
 
 ## Repository structure
 
