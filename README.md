@@ -6,6 +6,21 @@
 >
 > The generated starting points were reviewed, reorganized, documented, and modified to improve security consistency, maintainability, and repository readiness
 
+## What this project does
+
+This project is a cloud-based photo gallery application that lets users create accounts, verify their email addresses, create albums, upload photos, search stored content, and manage their own media
+
+It includes two backend implementations of the same product
+
+- A SQL version that stores users albums and photos in Amazon RDS for MySQL
+- A NoSQL version that stores users albums and photos in Amazon DynamoDB
+
+Both versions use Amazon S3 for image storage, Amazon SES for email verification, Flask for the backend, and Jinja templates with Bootstrap for the frontend
+
+The project also includes AWS CloudFormation infrastructure that can provision the main cloud resources needed to run the application
+
+Including both SQL and NoSQL implementations shows how one product can be designed for different storage strategies and helps demonstrate database selection as an architectural decision
+
 ## Why this project matters
 
 Modern applications often need to combine user authentication, media storage, search metadata management, and reliable cloud infrastructure
