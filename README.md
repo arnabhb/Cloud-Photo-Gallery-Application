@@ -14,6 +14,8 @@ This project demonstrates how the same photo gallery product can be implemented 
 
 The comparison is useful for real-world system design because it shows how database choice affects schema design, queries, deletion workflows, scalability, and application code
 
+This project involves frontend, backend, database, and authentication systems
+
 Practical applications include
 
 - Media management platforms
