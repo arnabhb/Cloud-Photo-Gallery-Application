@@ -10,12 +10,14 @@
 
 This project is a cloud-based photo gallery application that lets users create accounts, verify their email addresses, create albums, upload photos, search stored content, and manage their own media
 
-It includes two backend implementations of the same product
+For the frontend, Jinja templates with Bootstrap were used and the backend uses Flask
+
+Both implementations use different database structures:
 
 - A SQL version that stores user albums and photos in Amazon RDS for MySQL
 - A NoSQL version that stores user albums and photos in Amazon DynamoDB
 
-Both versions use Amazon S3 for image storage, Amazon SES for email verification, Flask for the backend, and Jinja templates with Bootstrap for the frontend
+Both versions use Amazon S3 for image storage, Amazon SES for email verification
 
 The project also includes AWS CloudFormation infrastructure that can provision the main cloud resources needed to run the application
 
