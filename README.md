@@ -2,7 +2,7 @@
 
 > **Generative AI disclosure**
 >
-> The baseline application templates and early scaffolding for this project were created with generative AI assistance using **Cursor** and **ChatGPT**
+> The baseline application templates for this project were created with generative AI assistance using **Cursor** and **ChatGPT**
 >
 > The generated starting points were reviewed reorganized documented and modified to improve security consistency maintainability and repository readiness
 
