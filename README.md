@@ -8,11 +8,11 @@
 
 ## Why this project matters
 
-Modern applications often need to combine user authentication media storage search metadata management and reliable cloud infrastructure
+Modern applications often need to combine user authentication, media storage, search metadata management, and reliable cloud infrastructure
 
 This project demonstrates how the same photo gallery product can be implemented with both relational and NoSQL databases while sharing the same Flask interface and AWS services
 
-The comparison is useful for real-world system design because it shows how database choice affects schema design queries deletion workflows scalability and application code
+The comparison is useful for real-world system design because it shows how database choice affects schema design, queries, deletion workflows, scalability, and application code
 
 Practical applications include
 
