@@ -12,8 +12,8 @@ This project is a cloud-based photo gallery application that lets users create a
 
 It includes two backend implementations of the same product
 
-- A SQL version that stores users albums and photos in Amazon RDS for MySQL
-- A NoSQL version that stores users albums and photos in Amazon DynamoDB
+- A SQL version that stores user albums and photos in Amazon RDS for MySQL
+- A NoSQL version that stores user albums and photos in Amazon DynamoDB
 
 Both versions use Amazon S3 for image storage, Amazon SES for email verification, Flask for the backend, and Jinja templates with Bootstrap for the frontend
 
