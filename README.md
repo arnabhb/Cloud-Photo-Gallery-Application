@@ -12,7 +12,7 @@ This project is a cloud-based photo gallery application that lets users create a
 
 For the frontend, Jinja templates with Bootstrap were used and the backend uses Flask
 
-Both implementations use different database structures:
+The backend implementation uses two different types of databases:
 
 - A SQL version that stores user albums and photos in Amazon RDS for MySQL
 - A NoSQL version that stores user albums and photos in Amazon DynamoDB
